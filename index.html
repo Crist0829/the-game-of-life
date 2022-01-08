@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/app.css">
+    <title>The game of life</title>
+</head>
+<body>
+
+    <h1>John Conway: "the Game of Life</h1>
+    <h3>By Crist</h3>
+    
+    <div class="menu container">
+        <button id="play">Play</button>
+        <button id="stop" onclick="deleteRulesEvent">Stop</button>
+        <button id="clear">Clear</button>
+        <div class="choose-row">
+            <input type="number" id="num-row">
+            <button id="set-num-row">Set number of rows</button>
+        </div>
+    </div>
+    
+    <div id="map" class="map"></div>
+
+    <script src="src/js/map.js"></script>
+</body>
+</html>
